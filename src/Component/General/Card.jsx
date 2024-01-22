@@ -1,20 +1,19 @@
 import React from "react";
 import { Col } from "react-bootstrap";
-import img from "../General/assets/product.png";
 import "./Card.css";
 
-const Card = () => {
+const Card = ({title,price,src,category}) => {
   return (
     <>
       <Col lg={3} md={6}>
-        <div className="product-card">
+        <div className="product-card mt-4">
           <div className="card-img">
-            <img src={img} alt="" />
+            <img src={src} alt="" />
           </div>
-          <div className="card-category">category</div>
-          <div className="card-title">title</div>
+          <div className="card-category">{category}</div>
+          <div className="card-title">{title.slice(0,20)}</div>
           <div className="card-price d-flex align-items-center gap-2">
-            $ 2000 <span>$ 100</span>
+            $ {price} <span>$ 100</span>
           </div>
           <div className="card-rating">rating</div>
           <div className="add-card">

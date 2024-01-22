@@ -15,7 +15,7 @@ const Navbar = () => {
               name="SearchKey"
               className="form-control"
             >
-              <option value selected disabled>
+              <option value="Categories" disabled>
                 All Categories
               </option>
               <option value="Categories01"> Categories 01</option>

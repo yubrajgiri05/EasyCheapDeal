@@ -17,6 +17,11 @@
 .btns:hover{
 border-bottom: 1px solid #d10024 !important ;
 }
+.btns:focus{
+ color: #d10024 !important ;
+ opacity: 1 !important;
+  }
+  
 .main-heading{
   font-size: 24px;
   font-weight: 700 !important;
