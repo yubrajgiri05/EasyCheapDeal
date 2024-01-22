@@ -6,12 +6,14 @@ import { Row } from "react-bootstrap";
 const Home = () => {
   const url = `https://fakestoreapi.com/products`;
   const[product,setProduct]= useState([])
+  const[cat,setCat]= useState(product)
 
   useEffect(()=>{
     fetch(url)
     .then(response=>response.json())
     .then(data =>{
       setProduct(data)
+      setCat(data)
     })
     .catch(error=>console.log(error));
   },[])
