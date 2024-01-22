@@ -1,0 +1,44 @@
+.navbar{
+    background-color: #15161d;
+    border-bottom: 5px solid #d10024;
+    min-height: 100px;
+}
+
+.navbar .nav-brand{
+    color: white !important;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar .form-control{
+    border: 1px solid black;
+    border-radius: 0px;
+}
+.navbar .form-control:focus{
+    border: 1px solid black;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+}
+.search-box{
+    background-color: #d10024 !important;
+    color: white !important;
+    border-top-right-radius:9px !important;
+    border-bottom-right-radius:9px !important;
+}
+.wishlist{
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+}
+.wishlist p{
+   font-size: 12px;
+}
+.navbar-main{
+    border-bottom:1px solid rgb(103, 103, 102);
+    padding: 20px 0;
+  }
+  .nav-item >.nav-link{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px ;
+    font-weight: 400;
+  }
