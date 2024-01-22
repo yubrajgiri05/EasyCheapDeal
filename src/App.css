@@ -1,0 +1,27 @@
+.primary-btn{
+  background-color: #d10024;
+  border-radius:10px ;
+  padding: 8px 12px;
+  margin: 0 auto;
+  width: fit-content;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+.btns{
+  background-color:white !important;
+  border: 0 !important;
+  font-weight: 700;
+  opacity: 0.5;
+}
+.btns:hover{
+border-bottom: 1px solid #d10024 !important ;
+}
+.main-heading{
+  font-size: 24px;
+  font-weight: 700 !important;
+}
+.section-margin{
+  margin: 40px 0;
+}
+ 
