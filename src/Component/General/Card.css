@@ -50,6 +50,7 @@
     bottom: -60px;
     left: 0;
     padding: 10px 0;
+    outline:2px solid black;
     display: none;
 }
 .add-card .primary-btn:hover{
@@ -104,4 +105,19 @@
 }
 .p-gy-5 {
     --bs-gutter-y: 75px !important;
+}
+.side-card .card-img{
+    width: 30%;
+    height: 60px !important;
+}
+.side-card .card-title{
+    font-size: 16px !important;
+}
+.side-card .card-price{
+    font-size: 14px !important;
+}
+.side h2{
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 12px !important;
 }
