@@ -1,12 +1,13 @@
 import React from "react";
 import { Col } from "react-bootstrap";
 import "./Card.css";
+import { FaRegStar,FaStar } from "react-icons/fa";
 
 const Card = ({title,price,src,category}) => {
   return (
     <>
       <Col lg={3} md={6}>
-        <div className="product-card mt-4">
+        <div className="product-card">
           <div className="card-img">
             <img src={src} alt="" />
           </div>
@@ -15,7 +16,9 @@ const Card = ({title,price,src,category}) => {
           <div className="card-price d-flex align-items-center gap-2">
             $ {price} <span>$ 100</span>
           </div>
-          <div className="card-rating">rating</div>
+          <div className="card-rating d-flex gap-2">
+            <FaStar/><FaStar/><FaStar/><FaRegStar/><FaRegStar/>
+          </div>
           <div className="add-card">
             <div className="primary-btn">Add to cart</div>
           </div>

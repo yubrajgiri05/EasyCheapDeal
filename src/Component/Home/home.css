@@ -1,0 +1,30 @@
+.sale{
+    background-color: #e5e6ef;
+    padding: 20px 0;
+    margin: 80px 0 !important;
+}
+.sale img{
+    height: 280px;
+    object-fit: contain;
+}
+.sale-box{
+    background-color:#d10024 ;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+.sale-box p{
+    font-size: 12px;
+    margin-bottom: 0 !important;
+}
+@media (max-width: 990px){
+    .sale img{
+        display: none;
+    }
+}
+
