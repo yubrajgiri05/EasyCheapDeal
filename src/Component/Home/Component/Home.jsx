@@ -5,6 +5,8 @@ import { Col, Row } from "react-bootstrap";
 import CategoryCard from "./CategoryCard";
 import Sale from "./Sale";
 import SideCard from "./SideCard";
+import Newsletter from "./Newsletter";
+import Footer from "../../General/Footer";
 
 const Home = () => {
   const url = `https://fakestoreapi.com/products`;
@@ -31,26 +33,26 @@ const Home = () => {
 
   return (
     <>
-      <Navbar filterItem={filterItem} />
+      <Navbar />
       <CategoryCard />
       <div className="container ">
-        <div className="d-flex justify-content-between section-margin">
+        <div className="d-flex justify-content-between align-items-center section-margin">
           <h2 className="main-heading">TOP SELLING</h2>
           <div className="catbutton d-flex gap-3">
             <button className="btns" onClick={() => filterItem("electronics")}>
-              Laptops
+            Electronics
             </button>
             <button
               className="btns"
               onClick={() => filterItem("men's clothing")}
             >
-              Smartphones
+              Men's 
             </button>
             <button
               className="btns"
               onClick={() => filterItem("women's clothing")}
             >
-              Cameras
+              Women's 
             </button>
             <button className="btns" onClick={() => filterItem("jewelery")}>
               Accessories
@@ -75,23 +77,23 @@ const Home = () => {
       </div>
       <Sale />
       <div className="container ">
-        <div className="d-flex justify-content-between section-margin">
+        <div className="d-flex justify-content-between section-margin align-items-center">
           <h2 className="main-heading">POPULER SELLING</h2>
           <div className="catbutton d-flex gap-3">
             <button className="btns" onClick={() => filterItem("electronics")}>
-              Laptops
+             Electronics
             </button>
             <button
               className="btns"
               onClick={() => filterItem("men's clothing")}
             >
-              Smartphones
+              Men's
             </button>
             <button
               className="btns"
               onClick={() => filterItem("women's clothing")}
             >
-              Cameras
+              Women's 
             </button>
             <button className="btns" onClick={() => filterItem("jewelery")}>
               Accessories
@@ -166,6 +168,8 @@ const Home = () => {
           </Row>
         </div>
       </div>
+      <Newsletter/>
+      <Footer/>
     </>
   );
 };

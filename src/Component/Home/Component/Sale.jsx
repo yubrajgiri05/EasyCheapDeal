@@ -7,7 +7,7 @@ import image01 from "../../General/assets/product01.png";
 const Sale = () => {
   return (
     <>
-      <div className="container-fluide sale">
+      <div className="container-fluide d-flex justify-content-center sale">
         <div className="d-flex gap-3 align-items-center">
           <img src={image} alt="" />
           <div className="saleitem d-flex flex-column gap-2 align-items-center">

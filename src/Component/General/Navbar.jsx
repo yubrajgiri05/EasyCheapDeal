@@ -3,7 +3,7 @@ import "./navbar.css";
 import { CiHeart, CiShoppingCart } from "react-icons/ci";
 import { NavLink } from "react-bootstrap";
 
-const Navbar = ({filterItem}) => {
+const Navbar = () => {
   return (
     <>
       <nav class="navbar">
@@ -62,22 +62,22 @@ const Navbar = ({filterItem}) => {
               Categories
             </NavLink>
           </li>
-          <li className="nav-item" onClick={()=>filterItem("electronics")}>
+          <li className="nav-item">
             <NavLink to="" className="nav-link" >
               Laptops
             </NavLink>
           </li>
-          <li className="nav-item" onClick={()=>filterItem("jewelery")}>
+          <li className="nav-item">
             <NavLink to="" className="nav-link" >
               Smartphones
             </NavLink>
           </li>
-          <li className="nav-item" onClick={()=>filterItem("electronics")}>
+          <li className="nav-item">
             <NavLink to="" className="nav-link" >
               Cameras
             </NavLink>
           </li>
-          <li className="nav-item" onClick={()=>filterItem("jewelery")}>
+          <li className="nav-item">
             <NavLink to="" className="nav-link" >
               Accessories
             </NavLink>

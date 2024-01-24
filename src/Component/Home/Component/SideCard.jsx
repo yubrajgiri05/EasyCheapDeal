@@ -5,7 +5,7 @@ import img from '../../General/assets/product.png'
 const SideCard = ({title,category,price,src}) => {
   return (
     <>
-        <div className="side-card d-flex gap-2 align-items-center">
+        <div className="side-card d-flex gap-2 align-items-center pt-2">
           <div className="card-img">
             <img src={src} alt="img" />
           </div>

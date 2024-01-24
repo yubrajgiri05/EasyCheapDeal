@@ -1,6 +1,6 @@
 .sale{
     background-color: #e5e6ef;
-    padding: 20px 0;
+    padding: 30px 0;
     margin: 80px 0 !important;
 }
 .sale img{
@@ -26,5 +26,34 @@
     .sale img{
         display: none;
     }
+}
+.newsletter{
+    border-top: 1px solid rgb(190, 186, 180);
+    padding: 28px 0;
+}
+.newsletter .newsheading{
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+}
+.newsletter .newsheading span{
+    font-size: 26px;
+    font-weight: 600;
+}
+.newsletter .form-control{
+    min-width: 300px !important;
+}
+.newsicon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid rgb(205, 191, 191);
+    color: #03072d;
+}
+.newsicon:hover{
+    background: rgb(231, 211, 211);
+    color: #d10024;
 }
 
