@@ -64,17 +64,17 @@ const Navbar = () => {
           </li>
           <li className="nav-item ">
             <NavLink to="/product" className="nav-link" >
-              Laptops
+              Men's
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/product" className="nav-link">
-              Smartphones
+              Womens's
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/product" className="nav-link">
-              Cameras
+              Electronic
             </NavLink>
           </li>
           <li className="nav-item">

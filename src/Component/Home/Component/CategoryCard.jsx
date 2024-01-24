@@ -8,7 +8,7 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 const CategoryCard = () => {
   return (
     <>
-      <div className="container">
+      <div className="container pt-5">
        <Row className='section-margin g-4'>
           <Col lg={4} md={6}>
             <div className="cat-card" style={{height:255}}>
