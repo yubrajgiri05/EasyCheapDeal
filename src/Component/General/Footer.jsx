@@ -2,6 +2,9 @@ import React from "react";
 import "./footer.css";
 import { Col, Row } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
 
 const Footer = () => {
   return (
@@ -15,12 +18,19 @@ const Footer = () => {
                 <li className="nav-item">
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Autem accusamus voluptatum incidunt, reprehenderi commodi!
+                     reprehenderi commodi!
                   </p>
                 </li>
-                <li className="nav-item"></li>
-                <li className="nav-item">aa</li>
-                <li className="nav-item">aa</li>
+                <li className="nav-item d-flex align-items-center gap-2">
+                    <FaLocationDot/> Santinagar, Kathmandu
+                </li>
+                <li className="nav-item d-flex align-items-center gap-2">
+                    <FaPhoneAlt/>  <NavLink to="tel:5551234567">9877655432</NavLink>
+                </li>
+                <li className="nav-item d-flex align-items-center gap-2">
+                    <IoIosMail/> <NavLink to="mailto:xyz@abc.com">mailto:xyz@abc.com</NavLink>
+
+                </li>
               </ul>
             </Col>
             <Col lg={3} md={6}>
@@ -85,6 +95,11 @@ const Footer = () => {
               </ul>
             </Col>
           </Row>
+        </div>
+      </div>
+      <div className="copyright">
+        <div className="copy-text">
+        Copyright ©2024 All rights reserved | This template is made with  by <span>ABC TECONG</span>
         </div>
       </div>
     </>

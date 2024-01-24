@@ -1,7 +1,7 @@
 import React from "react";
 import "./navbar.css";
 import { CiHeart, CiShoppingCart } from "react-icons/ci";
-import { NavLink } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -48,7 +48,7 @@ const Navbar = () => {
         <div className="container">
         <ul className="d-flex gap-3">
           <li className="nav-item">
-            <NavLink to="" className="nav-link active" aria-current="page" href="#">
+            <NavLink to="/" className="nav-link active" aria-current="page" href="#">
               Home
             </NavLink>
           </li>
@@ -62,23 +62,23 @@ const Navbar = () => {
               Categories
             </NavLink>
           </li>
-          <li className="nav-item">
-            <NavLink to="" className="nav-link" >
+          <li className="nav-item ">
+            <NavLink to="/product" className="nav-link" >
               Laptops
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="" className="nav-link" >
+            <NavLink to="/product" className="nav-link">
               Smartphones
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="" className="nav-link" >
+            <NavLink to="/product" className="nav-link">
               Cameras
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="" className="nav-link" >
+            <NavLink to="/product" className="nav-link">
               Accessories
             </NavLink>
           </li>

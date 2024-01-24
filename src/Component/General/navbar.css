@@ -54,7 +54,7 @@
     color: #d10024;
     border-bottom: 1px solid #d10024;
   }
-.nav-item .nav-link.active{
+.nav-item .nav-link:focus{
   color: #d10024;
-  border-bottom: 1px solid #d10024;
+  border-bottom: 2px solid #d10024;
 }

@@ -18,10 +18,30 @@
 .nav-item p{
     font-size: 15px;
     text-align: justify;
+    margin: 0 !important;
 }
 .nav-item a{
     color: rgb(175, 165, 165) !important;
 }
 .nav-item a:hover{
     color:#d10024 !important;
+}
+.copyright{
+    background-color: #1e1f29;
+    padding: 60px 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyright .copy-text{
+    color: rgb(175, 165, 165);
+    font-size: 14px;
+}
+.copyright .copy-text span{
+    color: rgb(252, 249, 249);
+    font-size: 16px;
+    font-weight: 500;
+}
+.copyright .copy-text span:hover{
+    color:#d10024;
 }

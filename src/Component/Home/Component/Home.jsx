@@ -11,14 +11,16 @@ import Footer from "../../General/Footer";
 const Home = () => {
   const url = `https://fakestoreapi.com/products`;
   const [product, setProduct] = useState([]);
-  const [cat, setCat] = useState(product);
+  const [topcat, setTopcat] = useState(product);
+  const [populercat, setPopulercat] = useState(product);
 
   useEffect(() => {
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
         setProduct(data);
-        setCat(data);
+        setTopcat(data);
+        setPopulercat(data);
       })
       .catch((error) => console.log(error));
   }, []);
@@ -28,7 +30,15 @@ const Home = () => {
       return curItem.category == catItem;
     });
     setProduct(product);
-    setCat(updateItem);
+    setTopcat(updateItem);
+
+  };
+  const filterItems = (catItem) => {
+    const updateItem = product.filter((curItem) => {
+      return curItem.category == catItem;
+    });
+    setProduct(product);
+    setPopulercat(updateItem);
   };
 
   return (
@@ -60,7 +70,7 @@ const Home = () => {
           </div>
         </div>
         <Row className="gx-4 p-gy-5 ">
-          {cat.slice(0, 4).map((card, index) => {
+          {topcat.slice(0, 4).map((card, index) => {
             return (
               <>
                 <Card
@@ -80,28 +90,28 @@ const Home = () => {
         <div className="d-flex justify-content-between section-margin align-items-center">
           <h2 className="main-heading">POPULER SELLING</h2>
           <div className="catbutton d-flex gap-3">
-            <button className="btns" onClick={() => filterItem("electronics")}>
+            <button className="btns" onClick={() => filterItems("electronics")}>
              Electronics
             </button>
             <button
               className="btns"
-              onClick={() => filterItem("men's clothing")}
+              onClick={() => filterItems("men's clothing")}
             >
               Men's
             </button>
             <button
               className="btns"
-              onClick={() => filterItem("women's clothing")}
+              onClick={() => filterItems("women's clothing")}
             >
               Women's 
             </button>
-            <button className="btns" onClick={() => filterItem("jewelery")}>
+            <button className="btns" onClick={() => filterItems("jewelery")}>
               Accessories
             </button>
           </div>
         </div>
         <Row className="gx-4 p-gy-5 ">
-          {cat.slice(0, 4).map((card, index) => {
+          {populercat.slice(0, 4).map((card, index) => {
             return (
               <>
                 <Card
