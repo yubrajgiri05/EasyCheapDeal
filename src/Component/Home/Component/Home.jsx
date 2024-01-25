@@ -10,8 +10,7 @@ import Footer from "../../General/Footer";
 import "../../../App.css"
 import { FaArrowUp} from 'react-icons/fa';
 
-const Home = () => {
-  const url = `https://fakestoreapi.com/products`;
+const Home = ({url}) => {
   const [product, setProduct] = useState([]);
   const [topcat, setTopcat] = useState(product);
   const [populercat, setPopulercat] = useState(product);
@@ -142,11 +141,11 @@ const Home = () => {
           </div>
         </div>
         <Row className="gx-4 p-gy-5 ">
-          {populercat.slice(0, 4).map((card, index) => {
+          {populercat.slice(0, 4).map((card) => {
             return (
               <>
                 <Card
-                  key={index}
+                  key={card.id}
                   title={card.title}
                   price={card.price}
                   src={card.image}

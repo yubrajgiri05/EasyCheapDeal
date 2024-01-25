@@ -1,30 +1,25 @@
-import React, { useEffect, useState } from "react";
+import {React,useState,useEffect} from "react";
 import Navbar from "../../General/Navbar";
 import Footer from "../../General/Footer";
-import { Container, Row } from "react-bootstrap";
 import Card from "../../General/Card";
+import { Row } from "react-bootstrap";
 
-const Product = () => {
-  const url = `https://fakestoreapi.com/products`;
-  const [product, setProduct] = useState([]);
+const Product = ({url}) => {
+ const [product,setProduct]=useState([]);
 
   useEffect(() => {
     fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
-        setProduct(data);
-        setTopcat(data);
-      })
+    .then((response) => response.json())
+    .then((data) => {
+      setProduct(data);
+    })
       .catch((error) => console.log(error));
   }, []);
-
-
   return (
     <>
       <Navbar />
-      <Container>
-        <div className="section-margin product-box">
-        <Row className="gx-4 p-gy-5 ">
+      <div className="products-card container my-4">
+        <Row className="gx-5 p-gy-5">
           {product.map((card, index) => {
             return (
               <>
@@ -39,8 +34,7 @@ const Product = () => {
             );
           })}
         </Row>
-        </div>
-      </Container>
+      </div>
       <Footer />
     </>
   );

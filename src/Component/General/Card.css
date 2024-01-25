@@ -121,3 +121,26 @@
     font-weight: 700 ;
     padding-bottom: 12px !important;
 }
+.card-detail .primary-btn{
+    margin: 0 !important;
+} 
+.count-btn {
+    border-radius: 15px;
+    padding: 4px 12px;
+    font-size: 12px;
+    border: 0px;
+    color: red;
+    background: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.count{
+    font-size: 24px;
+    font-weight: 500;
+}
+.card-detail .card-title{
+    font-size: 24px !important;
+}
+.card-desc{
+    text-align: justify;
+    padding-right: 60px ;
+}
