@@ -100,11 +100,11 @@ const Home = ({url}) => {
           </div>
         </div>
         <Row className="gx-4 p-gy-5 ">
-          {topcat.slice(0, 4).map((card, index) => {
+          {topcat.slice(0, 4).map((card) => {
             return (
               <>
                 <Card
-                  key={index}
+                  id={card.id}
                   title={card.title}
                   price={card.price}
                   src={card.image}
@@ -145,7 +145,7 @@ const Home = ({url}) => {
             return (
               <>
                 <Card
-                  key={card.id}
+                  id={card.id}
                   title={card.title}
                   price={card.price}
                   src={card.image}

@@ -4,11 +4,11 @@ import "./Card.css";
 import { FaRegStar, FaStar } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
-const Card = ({ title, price, src, category }) => {
+const Card = ({ title, price, src, category,id }) => {
   return (
     <>
       <Col lg={3} md={6}>
-        <NavLink to="/productdetail">
+        <NavLink to={`/productdetail/${id}`}>
         <div className="product-card">
             <div className="card-img">
               <img src={src} alt="" />
