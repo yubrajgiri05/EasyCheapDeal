@@ -1,0 +1,27 @@
+@media only screen and (max-width: 1200px) {
+    .cat-card .clip-card {
+        padding: 20px 40px !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-search {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .cat-card .clip-card {
+    padding: 20px 36px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-main {
+        display: none;
+    }
+    .d-colomn{
+        flex-direction: column !important;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+}

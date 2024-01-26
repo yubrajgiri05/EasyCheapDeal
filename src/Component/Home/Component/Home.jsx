@@ -76,7 +76,7 @@ const Home = ({url}) => {
       <Navbar />
       <CategoryCard />
       <div className="container">
-        <div className="d-flex justify-content-between align-items-center section-margin">
+        <div className="d-flex justify-content-between align-items-center .d-colomn section-margin">
           <h2 className="main-heading">TOP SELLING</h2>
           <div className="catbutton d-flex gap-3">
             <button className="btns" onClick={() => filterItem("electronics")}>
@@ -117,7 +117,7 @@ const Home = ({url}) => {
       </div>
       <Sale />
       <div className="container ">
-        <div className="d-flex justify-content-between section-margin align-items-center">
+        <div className="d-flex justify-content-between section-margin .d-colomn align-items-center">
           <h2 className="main-heading">POPULER SELLING</h2>
           <div className="catbutton d-flex gap-3">
             <button className="btns" onClick={() => filterItems("electronics")}>
@@ -156,7 +156,7 @@ const Home = ({url}) => {
           })}
         </Row>
         <div className="section-margin pt-5">
-        <Row className="side">
+        <Row className="side g-5">
             <Col lg={4} md={6}>
               <h2>MEN SELLING</h2>
               {displaySideCards("men's clothing")}

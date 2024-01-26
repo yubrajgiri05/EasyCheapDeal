@@ -43,6 +43,8 @@ border-bottom: 1px solid #d10024 !important ;
   outline: none;
 }
 .products-card{
+  margin-bottom: 20px !important;
   padding: 30px;
+  padding-bottom: 80px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }

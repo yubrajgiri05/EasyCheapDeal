@@ -6,25 +6,36 @@ import { Row } from "react-bootstrap";
 
 const Product = ({url}) => {
  const [product,setProduct]=useState([]);
+ const [populercat, setPopulercat] = useState(product);
 
   useEffect(() => {
     fetch(url)
     .then((response) => response.json())
     .then((data) => {
       setProduct(data);
+      setPopulercat(data);
     })
       .catch((error) => console.log(error));
   }, []);
+
+  const filterItems = (catItem) => {
+    const updateItem = product.filter((curItem) => {
+      return curItem.category == catItem;
+    });
+    setProduct(product);
+    setPopulercat(updateItem);
+  };
+
   return (
     <>
-      <Navbar />
-      <div className="products-card container my-4">
+      <Navbar filterItems={filterItems}/>
+      <div className="products-card container my-5">
         <Row className="gx-5 p-gy-5">
-          {product.map((card, index) => {
+          {populercat.map((card) => {
             return (
               <>
                 <Card
-                  key={index}
+                  id={card.id}
                   title={card.title}
                   price={card.price}
                   src={card.image}

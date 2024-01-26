@@ -3,7 +3,9 @@ import "./navbar.css";
 import { CiHeart, CiShoppingCart } from "react-icons/ci";
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({filterItems}) => {
+  
+  
   return (
     <>
       <nav class="navbar">
@@ -48,7 +50,7 @@ const Navbar = () => {
         <div className="container">
         <ul className="d-flex gap-3">
           <li className="nav-item">
-            <NavLink to="/" className="nav-link active" aria-current="page" href="#">
+            <NavLink to="/"  className="nav-link active" aria-current="page" href="#">
               Home
             </NavLink>
           </li>
@@ -63,22 +65,22 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li className="nav-item ">
-            <NavLink to="/product" className="nav-link" >
-              Men's
+            <NavLink to="/product" onClick={() => filterItems("men's clothing")} className="nav-link" >
+              Men's 
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/product" className="nav-link">
+            <NavLink to="/product" onClick={() => filterItems("women's clothing")} className="nav-link">
               Womens's
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/product" className="nav-link">
+            <NavLink to="/product" onClick={() => filterItems("electronics")} className="nav-link">
               Electronic
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/product" className="nav-link">
+            <NavLink to="/product" onClick={() => filterItems("jewelery")} className="nav-link">
               Accessories
             </NavLink>
           </li>
