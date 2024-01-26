@@ -5,7 +5,6 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = ({filterItems}) => {
   
-  
   return (
     <>
       <nav class="navbar">
