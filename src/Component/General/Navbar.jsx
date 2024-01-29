@@ -19,8 +19,10 @@ const Navbar = ({filterItems}) => {
               <option value="Categories" disabled>
                 All Categories
               </option>
-              <option value="Categories01"> Categories 01</option>
-              <option value="Categories02"> Categories02</option>
+              <option value="Categories01"> Men's Shopping</option>
+              <option value="Categories02"> Women's Shopping</option>
+              <option value="Categories02"> Electronic</option>
+              <option value="Categories02"> Accessories</option>
             </select>
             <div className="input-group md-form form-sm form-2 pl-0">
               <input

@@ -31,14 +31,14 @@ const Carddetail = ({ url }) => {
   return (
     <>
       <Navbar />
-      {product.map((card) => {
+      {/* {product.map((card) => {
         return (
           <>
             <h1>{card.title}</h1>
           </>
         );
-      })}
-      <div className="conatiner py-5 card-detail">
+      })} */}
+      <div className="conatiner py-4 card-detail">
         <Row className="g-5">
           <Col lg={6}>
             <img src={img} alt="" style={{ height: 500 }} />
