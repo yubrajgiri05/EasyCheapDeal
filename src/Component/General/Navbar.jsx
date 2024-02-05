@@ -9,7 +9,7 @@ const Navbar = ({filterItems}) => {
     <>
       <nav class="navbar">
         <div className="nav-search d-flex justify-content-between container">
-          <NavLink to="" className="nav-brand">EASYCHEAPDEAL</NavLink>
+          <NavLink to="/" className="nav-brand">EASYCHEAPDEAL</NavLink>
           <form action="" className="d-flex gap-0">
             <select
               required="required"
